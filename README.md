@@ -2,10 +2,18 @@
 
 interview code challenge
 
-# There is no way you using my code for your own project anywhere.
+## There is no way you using my code for your own project anywhere.
 
 
-## File Explanation
+## Run it
+
+The tableview is to visually interat, so if you want, just click to see the result.
+
+After you download, just run like an iOS APP and the Output area will also print the result of each test case.
+
+
+
+# File Explanation
 
 ### TableViewController.swift
 
