@@ -14,7 +14,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var successPrint: String!
     var skippedPrint: String!
     var errorPrint: String!
-    var testCases = ["test1", "test2"]
+    var testCases = ["test1", "test2", "emptyTest"]
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -70,7 +70,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         var valid = [String]()
         var skipped = [String]()
         var error = [String]()
-        valid.append(allValid[0])
+        allValid.isEmpty ? valid.append("") : valid.append(allValid[0])
         for l in allLinks {
             if (allValid.contains(l)) {
                 if (!valid.contains(l)) {
